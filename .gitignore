@@ -1,0 +1,49 @@
+# ESP-IDF build outputs
+build/
+dist/
+*.bin
+*.elf
+*.map
+
+# ESP-IDF managed components (third-party libraries)
+managed_components/
+
+# ESP-IDF dependencies
+dependencies.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ESP-IDF
+sdkconfig.old
+.espressif/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Other
+.specstory/
+*.backup
