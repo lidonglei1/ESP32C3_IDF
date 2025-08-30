@@ -99,8 +99,9 @@ void app_main(void)
     audio_board_handle_t board_handle = audio_board_init();
     audio_hal_ctrl_codec(board_handle->audio_hal, AUDIO_HAL_CODEC_MODE_BOTH, AUDIO_HAL_CTRL_START);
 
-    int player_volume;
-    audio_hal_get_volume(board_handle->audio_hal, &player_volume);
+    int player_volume = 10;
+    audio_hal_set_volume(board_handle->audio_hal, player_volume);
+    // audio_hal_get_volume(board_handle->audio_hal, &player_volume);
 
     ESP_LOGI(TAG, "[ 2 ] Create audio pipeline, add all elements to pipeline, and subscribe pipeline event");
     audio_pipeline_cfg_t pipeline_cfg = DEFAULT_AUDIO_PIPELINE_CONFIG();

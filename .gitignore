@@ -45,5 +45,5 @@ sdkconfig.old
 *.bak
 
 # Other
-.specstory/
+# .specstory/
 *.backup
